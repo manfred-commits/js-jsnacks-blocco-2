@@ -16,10 +16,17 @@ var somma=0;
 // 3. versione con il ciclo while
 var contatore=0;
 while(contatore<5){
-    inputUtente=parseInt(prompt("Inserisci il "+ (contatore+1)+ "° numero: "));
-    somma+=inputUtente;
-    console.log(somma);
-    contatore++;
+    if(!isNaN(inputUtente)){
+        inputUtente=parseInt(prompt("Inserisci il "+ (contatore+1)+ "° numero: "));
+        somma+=inputUtente;
+        console.log(somma);
+        contatore++;
+    }else{
+        alert("Inserisci un numero!");
+        inputUtente=0;
+        contatore--;
+    }
+    
 }
 
 alert("La somma dei numeri inseriti è: "+somma);
