@@ -5,4 +5,6 @@ console.log(inputUser);
 // 2.condizione pari
 if(inputUser%2==0){
     alert("Il tuo numero è: "+inputUser+" NUMERO PARI");
+}else{
+    alert("Il tuo numero è: "+(inputUser+1)+" NUMERO PARI (dopo trasformazione)");
 }
