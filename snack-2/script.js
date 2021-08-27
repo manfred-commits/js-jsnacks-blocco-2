@@ -12,10 +12,8 @@ while(valido){
 // 2.verifica pari e disparii e print a video
 if(inputUser%2==0){
     alert("Il tuo numero è: "+inputUser+" NUMERO PARI");
-    valido=false;
 }else{
     alert("Il tuo numero è: "+(inputUser+1)+" NUMERO PARI (dopo trasformazione)");
-    valido=false;
 }
 
 console.log(inputUser);
