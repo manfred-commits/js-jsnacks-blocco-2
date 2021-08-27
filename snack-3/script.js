@@ -3,16 +3,28 @@
 var listaDiNomi=["Mario","Mirco","Mimmo"];
 var listaDiCognomi=["Brisco","Brasco","Brango"];
 var listaFalsa=[];
-var numeroCognomi=0;
-var numeroNomi=0;
+var cognomiFalsi=[];
+var nomiFalsi=[];
 
-for(var i=0; i<3;i++){
-    listaFalsa.push(listaDiNomi[Math.floor(Math.random() * 3)]+" "+listaDiCognomi[Math.floor(Math.random() * 3)]);
+// for(var i=0; i<3;i++){
+//     nomiFalsi[i]=listaDiNomi[Math.floor(Math.random() * 3)];
+//     while(nomiFalsi[i].includes(listaDiNomi[i])){
+//         nomiFalsi[i]=listaDiNomi[Math.floor(Math.random() * 3)];
+//     }
+//     console.log(nomiFalsi);
+//     cognomiFalsi[i]=listaDiCognomi[Math.floor(Math.random() * 3)];
+//     while(cognomiFalsi[i].includes(listaDiNomi[i])){
+//         cognomiFalsi[i]=listaDiNomi[Math.floor(Math.random() * 3)];
+//     }
+//     console.log(nomiFalsi);
+    
 
-    if(listaFalsa.includes(listaDiNomi[Math.floor(Math.random() * 3)]+" "+listaDiCognomi[Math.floor(Math.random() * 3)])){
-    }else{
-        listaFalsa.push(listaDiNomi[Math.floor(Math.random() * 3)]+" "+listaDiCognomi[Math.floor(Math.random() * 3)]);
+// }
+for(var i=0; i<3; i++){
+	var nomeCompleto = listaDiNomi[Math.floor(Math.random() * 3)]+" "+listaDiCognomi[Math.floor(Math.random() * 3)];
+
+    if( !listaFalsa.includes(nomeCompleto) ){
+    	listaFalsa.push(nomeCompleto);
     }
-
 }
 console.log(listaFalsa);
