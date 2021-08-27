@@ -15,18 +15,17 @@ var somma=0;
 // Esegui questo programma in due versioni, con il for e con il while.
 // 3. versione con il ciclo while
 var contatore=0;
-while(contatore<5){
-    if(!isNaN(inputUtente)){
-        inputUtente=parseInt(prompt("Inserisci il "+ (contatore+1)+ "° numero: "));
+while(contatore<5){        
+    inputUtente=parseInt(prompt("Inserisci il "+ (contatore+1)+ "° numero: "));
+    if(!isNaN(inputUtente)){    
         somma+=inputUtente;
+        console.log(inputUtente),
         console.log(somma);
-        contatore++;
-    }else{
+        contatore++;}
+    else{
         alert("Inserisci un numero!");
         inputUtente=0;
-        contatore--;
-    }
-    
+    } 
 }
 
 alert("La somma dei numeri inseriti è: "+somma);
