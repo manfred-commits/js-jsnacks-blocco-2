@@ -8,7 +8,14 @@ var somma=0;
 // 2. Il programma stampa la somma di tutti i numeri inseriti.
 // for(var i=0; i<5;i++){
 //     inputUtente=parseInt(prompt("Inserisci il "+ (i+1)+ "° numero: "));
-//     somma+=inputUtente;
+//     if(!isNaN(inputUtente)){
+//         somma+=inputUtente;
+//     }else{
+//         alert("Inserisci un numero!");
+//         inputUtente=0;
+//         i--;
+//     }
+// }
 //     console.log(somma);
 // }
 
