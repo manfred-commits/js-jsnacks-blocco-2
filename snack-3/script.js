@@ -9,11 +9,10 @@ var numeroNomi=0;
 for(var i=0; i<3;i++){
     listaFalsa.push(listaDiNomi[Math.floor(Math.random() * 3)]+" "+listaDiCognomi[Math.floor(Math.random() * 3)]);
 
-    // if(listaFalsa.includes(listaDiNomi[Math.floor(Math.random() * 3)]+" "+listaDiCognomi[Math.floor(Math.random() * 3)])){
-    //     i--;
-    // }else{
-    //     listaFalsa.push(listaDiNomi[Math.floor(Math.random() * 3)]+" "+listaDiCognomi[Math.floor(Math.random() * 3)]);
-    // }
+    if(listaFalsa.includes(listaDiNomi[Math.floor(Math.random() * 3)]+" "+listaDiCognomi[Math.floor(Math.random() * 3)])){
+    }else{
+        listaFalsa.push(listaDiNomi[Math.floor(Math.random() * 3)]+" "+listaDiCognomi[Math.floor(Math.random() * 3)]);
+    }
 
 }
 console.log(listaFalsa);
