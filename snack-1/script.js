@@ -24,7 +24,7 @@ var somma=0;
 var contatore=0;
 while(contatore<5){        
     inputUtente=parseInt(prompt("Inserisci il "+ (contatore+1)+ "° numero: "));
-    if(!isNaN(inputUtente)){    
+    if(!isNaN(inputUtente)){        
         somma+=inputUtente;
         console.log(inputUtente),
         console.log(somma);
