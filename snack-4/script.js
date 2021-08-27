@@ -2,7 +2,10 @@
 // e fai la somma di tutti gli elementi che sono in posizione (indice dell'array) dispari
 
 //1. Crea un array di numeri interi
-var numeri=[5,2,12,4,5,24,7,42,9,10];
+var numeri=[];
+for(var i=0;i<20;i++){
+    numeri[i]=Math.floor(Math.random() * 20);
+}
 var somma=0;
 contatore=0;
 while(contatore<numeri.length){
@@ -14,4 +17,4 @@ while(contatore<numeri.length){
     }
     contatore++;
 }
-console.log(somma);
+console.log("La somma dei contenuti degli indici dispari è: "+somma);
