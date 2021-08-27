@@ -20,7 +20,8 @@ var nomiFalsi=[];
     
 
 // }
-for(var i=0; i<3; i++){
+var i=0; 
+while(listaFalsa.length < 3){
 	var nomeCompleto = listaDiNomi[Math.floor(Math.random() * 3)]+" "+listaDiCognomi[Math.floor(Math.random() * 3)];
 
     if( !listaFalsa.includes(nomeCompleto) ){
