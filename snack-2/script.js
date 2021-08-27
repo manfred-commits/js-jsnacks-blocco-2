@@ -5,7 +5,7 @@ while(valido){
     var inputUser= parseInt(prompt("Inserisci un numero: "));
     // 1.2. validazione del numero
     while(isNaN(inputUser)){
-        var inputUser= parseInt(prompt("Inserisci un numero!!!! "));
+        inputUser= parseInt(prompt("Inserisci un numero!!!! "));
     }
     valido=false;
 }
